@@ -22,6 +22,13 @@ public class Cliente {
     @Column(name="telefono")
     private String tel;
 
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
 
     public String getEmail(){
         return email;
