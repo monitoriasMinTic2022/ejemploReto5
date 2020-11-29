@@ -22,7 +22,7 @@ public class Corredor implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         
-        
+        /*
         Cliente prueba = new Cliente();
         prueba.setNombres("William Rodríguez");
         prueba.setEmail("wiarodriguezmo@unal.edu.co");
@@ -68,6 +68,6 @@ public class Corredor implements CommandLineRunner {
         }
         
         System.out.println("Cantidad: " + repo.count());
-       
+       */
     }
 }
