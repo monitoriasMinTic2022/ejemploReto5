@@ -11,7 +11,7 @@ import com.monitorias.libreria.repos.ClienteRepo;
 import com.monitorias.libreria.Extractor;
 import java.util.Optional;
 import com.monitorias.libreria.modelos.Cliente;
-
+import javax.swing.JButton;
 /**
  *
  * @author clases
@@ -29,20 +29,19 @@ public class Ventana extends JFrame {
     
     private void initComponents() {
         
-        jButton1 = new javax.swing.JButton();
-        guardar = new javax.swing.JButton();
+        jButton1 = new JButton();
+        guardar = new JButton();
         jTextField1 = new javax.swing.JTextField("Introduzca el ID");
         clienteNombre = new javax.swing.JTextField("Nombre cliente");
-        clienteNombre.setBounds(200, 1000, 350, 1160);
+        clienteNombre.setBounds(200, 200, 350, 160);
         clienteEmail = new javax.swing.JTextField("Email");
-        clienteEmail.setBounds(160, 1000, 150, 60);
+        clienteEmail.setBounds(160, 10, 150, 60);
         clienteTel = new javax.swing.JTextField("Telefono");
-        clienteTel.setBounds(330, 1000, 150, 60);
+        clienteTel.setBounds(330, 10, 150, 60);
         jTextField1.setBounds(0, 0, 150, 60);
-        jButton1.setBounds(0, 0, 250, 60);
-        jButton1.setLocation(250, 150);
+        jButton1.setBounds(500, 0, 250, 60);
+        //jButton1.setLocation(250, 150);
         guardar.setBounds(0, 0, 150, 60);
-        guardar.setLocation(200, 1000);
         jLabel1 = new javax.swing.JLabel();
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -61,15 +60,11 @@ public class Ventana extends JFrame {
         this.add(jLabel1);
         this.add(clienteEmail);
         this.add(clienteTel);
-        this.add(guardar);
+        //this.add(guardar);
         
         
     }
         
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {                                            
-        // TODO add your handling code here:
-    }                                           
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) { 
         
         Long id = Long.parseLong(jTextField1.getText());
